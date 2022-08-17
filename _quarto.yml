@@ -8,7 +8,6 @@ format:
     toc-title: Contents
     toc-location: right
     html-math-method: katex
-    self-contained: true
     code-fold: true
     code-overflow: wrap
     code-summary: Show the code
@@ -17,7 +16,7 @@ format:
     footnotes-hover: true
     link-external-icon: true
   revealjs:
-    self-contained: true
+    self-contained: false
     code-fold: false
     code-overflow: wrap
     footer: "[Dyerlab](https://dyerlab.org)"

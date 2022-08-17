@@ -1,84 +1,109 @@
 ---
-title: "Topic Title"
-subtitle: "Witty Commentary"
-author: Rodney J. Dyer
-format: revealjs
-editor: visual
+title: "Quarto"
+subtitle: "&nbsp;"
+author: Rodney Dyer, PhD
+format: 
+  revealjs:
+    background-transition: fade
+    theme: default
+    logo: "media/ces_logo.png"
+    chalkboard: true
+title-slide-attributes: 
+  data-background-image: "media/contour.png"
+  data-background-position: "right"
+  data-background-size: initial
 ---
 
-## Quarto
+# General Background {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+## Hello Quarto
 
-## Bullets
+> Quarto is an open-source *document creation system* based upon a tool called [Pandoc](https://pandoc.org/).
 
-When you click the **Render** button a document will be generated that includes:
-
--   Content authored with markdown
--   Output from executable code
-
-## Some Title
-
-::: {layout-ncol="2"}
-### List One
-
--   Item A
--   Item B
--   Item C
-
-### List Two
-
--   Item X
--   Item Y
--   Item Z
+::: {.fragment .fade-in}
+These tools allow you to weave together, raw data, analysis code, analysis output, graphics, and interactive elements into a single document that can be turned into a wide variety of products.
 :::
 
-## Another Slide
-
-::: {layout-ncol="2"}
-### The code
-
-```{r eval=FALSE, echo=TRUE}
-hist( rnorm(1200) )
-```
-
-### The Plot
-
-```{r echo=FALSE}
-hist( rnorm( 1200 ) )
-```
+::: {.fragment .fade-in}
+This means that you do not have to copy-paste from analysis -\> Excel -\> Word -\> Powerpoint -\> etc.
 :::
 
-## And another slide
+## So what is Quarto really?
 
-::: {layout-ncol="2"}
--   Item X
--   Item Y
--   Item Z
+Quarto is an open source scientific and technical publishing system makes the process of workign with data, analyzing it, and writing it up suck just a little bit less by streamlining how we create content for:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida eu erat et fring. Morbi congue augue vel eros ullamcorper, eget convallis tortor sagittis. Fusce sodales viverra mauris a fringilla. Donec feugiat, justo eu blandit placerat, enim dui volutpat turpis, eu dictum lectus urna eu urna. Mauris sed massa ornare, interdum ipsum a, semper massa.
+-   HTML reports, blogs, and websites.
+-   PDF, RTF, & Word documents.
+-   Presentations (PowerPoint, Beamer, revealjs).
+-   Technical Books & Journal Articles.
+-   Dashboards.
+-   Projects.
+
+# How Quarto Works {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
+
+## Implementation != Interface
+
+![](media/qmd-knitr.png)
+
+## Language Agnostic (Python or Julia)
+
+![](media/qmd-jupyter.png)
+
+## Interface Agnostic
+
+::: r-stack
+![](media/rstudio-preview.png){.fragment}
+
+![](media/jupyterlab-preview.png){.fragment}
+
+![](media/python-vscode.png){.fragment}
 :::
 
-## Code
+# Getting Quarto {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Downlaoding
 
-```{r echo=TRUE}
-px <- 0.75
-py <- 0.25
-m <- 0.1
-ret <- rep(NA,100)
-ret[1] <- py
-for( i in 2:100) {
-  ret[i] <- (1-m)*ret[(i-1)] + px * m   
-}
-```
+Quarto is a document processing system and must be installed on your computer to be accessed from inside RStudio, VSCode, etc.
 
-## Results
+[https://quarto.org](https://quarto.org/) has the latest version of the executable. Visit the site and download the proper version for your computer.
 
-```{r}
-plot( ret, type="l")
-```
+ 
+
+::: callout-note
+The version used for this document was `r system("quarto --version", intern=TRUE)`
+:::
+
+## Quarto Document Creation in RStudio
+
+::: r-stack
+![](media/qmd_doc.png){.fragment}
+
+![](media/qmd_presentation.png){.fragment}
+
+![](media/qmd_interactive.png){.fragment}
+:::
+
+## Visual vs. Source Editor
+
+The latest versions of RStudio have a *source* and *visual* editor for quarto documents.
+
+![](media/source.png)
+![](media/visual.png)
+
+## "Just Say No" To Visual Editors {background-color="black"}
+
+![](media/dyer-no.jpg){fig-align="center"}
+
+
+## Rendering A Quarto Document
+
+To create a document from your markdown, use the `Render` button in the toolbar.  
+
+![](media/render.png)
+
+:::{.fragment .fade-in}
+Depending on your configuration and the document type, the output will be displayed within either RStudio or in an external viewer (PDF, Word, etc.).
+:::
 
 ## Questions
 
