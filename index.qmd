@@ -17,8 +17,8 @@ It is intended that individuals who complete the work in this repository will be
 
 To describe quarto, the following resrouces are available.
 
--   [Slides](slides.html) - The slides describing the quarto system.
--   [In Class Activity](in-class.html) - A short in-class activity to explore some of the more dynamic aspects of this topic.
+-   [Slides](https://dyerlabteaching.github.io/Quarto/slides.html) - The slides describing the quarto system.
+-   [In Class Activity](https://dyerlabteaching.github.io/Quarto/in-class.html) - A short in-class activity to explore some of the more dynamic aspects of this topic.
 
 ### External Resources
 

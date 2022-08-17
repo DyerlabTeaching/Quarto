@@ -14,9 +14,9 @@ This activity will get quarto installed on your machine and producing documents.
 
 ## The Activity
 
-1. First, you must download the latest version of RStudio.  Go to https://rstudio.org and download the latest build for your platform.  Follow the instructions relevant to your own operating system.
+1. First, you must download the latest version of RStudio.  Go to [https://rstudio.org](https://rstudio.org) and download the latest build for your platform.  Follow the instructions relevant to your own operating system.
 
-2. You should now download and install Quarto.  Go to https://quarto.org and download the latest version for your the operating system on your computer.
+2. You should now download and install Quarto.  Go to [https://quarto.org](https://quarto.org) and download the latest version for your the operating system on your computer.
 
 3. Open RStudio and select the `Terminal` tab (commonly found in the same pane as the one holding the R console) and type the following in to the terminal prompt.  This will install a basic pdf creation system on your computer so that you can render to PDF.
 
