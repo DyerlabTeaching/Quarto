@@ -1,7 +1,7 @@
 # Quarto
 
 <p align="center">
-[![](media/quarto.png)](https://quarto.org/)
+<a href="https://quarto.org"><img src="media/quarto.png"></a>
 </p>
 
 > Quarto is an open source scientific and technical publishing system that supports the integration of data input, manipulation, analyses, and technical descriptions of scientific writings in a single document context. Quarto allows the same source file to create manuscripts (doc & pdf), web pages, presentations (powerpoint & revealjs), posters, etc.
