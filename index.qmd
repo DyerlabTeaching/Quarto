@@ -1,5 +1,8 @@
 ---
 title: "Quarto"
+format:
+  html:
+    self-contained: true
 ---
 
 [![](media/quarto.png){fig-align="center"}](https://quarto.org/)
