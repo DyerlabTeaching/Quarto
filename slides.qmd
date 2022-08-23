@@ -62,7 +62,7 @@ Quarto is an open source scientific and technical publishing system makes the pr
 
 # Getting Quarto {background-color="black" background-image="media/contour.png" background-size="initial" background-position="right"}
 
-## Downlaoding
+## Downloading
 
 Quarto is a document processing system and must be installed on your computer to be accessed from inside RStudio, VSCode, etc.
 
